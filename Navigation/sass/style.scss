@@ -1,78 +1,151 @@
 @import "mixins";
 @import "variables";
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
-.container{
+
+.container {
     max-width: 1140px;
     margin: 0 auto;
 }
+
 // utility
-a{
+a {
     text-decoration: none;
     color: $primary-color;
     transition: all .5s;
 }
-a:hover{
+
+a:hover {
     color: $secondary-color;
 }
-i{
+
+i {
     color: $primary-color;
 }
-ul{
+
+ul {
     list-style: none;
 }
+
 // utility end
-header{
-    nav{
-        .nav-top{
+header {
+    nav {
+        .nav-top {
             @include flexbox;
             padding: 10px 0;
             border-bottom: $border;
-            .branding{
+
+            .branding {
                 border-right: $border;
                 padding: 7px 10px;
-                img{
+
+                img {
                     height: 26px;
-                } 
+                }
             }
-            .pagination{
+
+            .pagination {
                 @include flexbox;
                 margin-right: 10px;
-                li{
+
+                li {
                     margin-left: 5px;
                     border: $border;
                     padding: 10px 15px;
                     border-radius: 5px;
                     transition: .5s all;
-                    &:hover{
+                    cursor: pointer;
+
+                    &:hover {
                         border-color: $danger-color;
                         transition: 0.5s all;
                     }
-                    &:hover i{
+
+                    &:hover i {
                         color: $danger-color;
                         transition: .5s all;
                     }
-                    &:nth-child(3){
+
+                    &:nth-child(3) {
                         background-color: #00A6EB;
                         transition: .5s all;
-                        &:nth-child(3):hover{
+
+                        &:nth-child(3):hover {
                             background-color: $danger-color;
                         }
-                        a{
+
+                        a {
                             color: $succes-color;
                             font-size: 14px;
                         }
-                        i{
+
+                        i {
                             color: $succes-color;
                         }
                     }
-                    i{
-                        font-size: 16px;    
+
+                    i {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        .contact {
+
+            border-bottom: $border;
+
+            .contact-item {
+                @include flexbox;
+                padding: 10px;
+
+                .contact-us {
+                    @include flexbox;
+
+                    li {
+                        font-size: 14px;
+
+                        &:last-child {
+                            padding-left: 20px;
+                        }
+
+                        a {
+                            font-size: 14px;
+                            padding: 3px 20px 3px 0;
+                            border-right: $border;
+                        }
+
+                        i {
+                            color: $secondary-color;
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                .social-icon {
+                    @include flexbox;
+
+                    li {
+                        padding: 0 5px;
+                        border-right: $border;
+
+                        a {
+                            padding: 0 10px;
+
+                            &:hover i {
+                                color: $secondary-color;
+                            }
+
+                            i {
+                                font-size: 13px;
+                                transition: .5s all;
+                            }
+                        }
                     }
                 }
             }
