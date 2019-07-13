@@ -1,3 +1,4 @@
+"use strict";
 // Birinci tapsiriq - saytdan olan
 function foundNum (x, y){
     if(x < 0 && y < 0){
