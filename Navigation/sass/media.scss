@@ -1,0 +1,63 @@
+@import"mixins";
+@import"variables";
+@media (max-width:768px){
+    .branding{
+        display: none;
+    }
+    .pagination{
+        width: 100%;
+        li{
+            width: 19%;
+            text-align: center;
+            span{
+                display: none;
+            }
+        }
+    }
+    .contact{
+        display: none;
+    }
+    .navigation{
+        .navbar{
+            width: 80%;
+            margin: 0 auto;
+        }
+        .logo{
+            a{
+                font-size: 34px !important;
+            }
+        }
+        .navigation-menu{
+            // display: none !important;
+            position: absolute;
+            left: 0; 
+            width: 260px;
+            @include flexboxCol;
+            align-items: flex-start !important;
+            background-color: rgba(53, 61, 65, 0.97);
+            margin-top: 160px;
+            position: fixed;
+            transform: translateX(-500px);
+            transition: .2s all;
+            .dropdown{
+                .submenu{
+                    background-color: rgba(53, 61, 65, 0.97);;
+                    box-shadow: none !important;
+                    position: static !important;
+                }
+            }
+            i{
+                color: $succes-color;
+            }
+            a{
+                color: $succes-color;
+            }
+        }
+        label{
+            display: block !important;
+        }
+        #toggle:checked + .navigation-menu{
+            transform: translateX(0px);
+        }
+    }
+}

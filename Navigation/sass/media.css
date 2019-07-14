@@ -1,0 +1,67 @@
+@media (max-width: 768px) {
+  .branding {
+    display: none;
+  }
+  .pagination {
+    width: 100%;
+  }
+  .pagination li {
+    width: 19%;
+    text-align: center;
+  }
+  .pagination li span {
+    display: none;
+  }
+  .contact {
+    display: none;
+  }
+  .navigation .navbar {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .navigation .logo a {
+    font-size: 34px !important;
+  }
+  .navigation .navigation-menu {
+    position: absolute;
+    left: 0;
+    width: 260px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+    background-color: rgba(53, 61, 65, 0.97);
+    margin-top: 160px;
+    position: fixed;
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+    -webkit-transition: .2s all;
+    transition: .2s all;
+  }
+  .navigation .navigation-menu .dropdown .submenu {
+    background-color: rgba(53, 61, 65, 0.97);
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    position: static !important;
+  }
+  .navigation .navigation-menu i {
+    color: #fff;
+  }
+  .navigation .navigation-menu a {
+    color: #fff;
+  }
+  .navigation label {
+    display: block !important;
+  }
+  .navigation #toggle:checked + .navigation-menu {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+/*# sourceMappingURL=media.css.map */

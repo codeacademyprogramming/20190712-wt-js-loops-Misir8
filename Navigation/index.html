@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="sass/style.css">
+    <link rel="stylesheet" href="sass/media.css">
 </head>
 
 <body>
@@ -20,7 +22,7 @@
                 <ul class="pagination">
                     <li><a href="#"><i class="fas fa-external-link-alt"></i></a></li>
                     <li><a href="#"><i class="fas fa-home"></i></a></li>
-                    <li><a href="#"><i class="fas fa-download"></i> Free Download</a></li>
+                    <li><a href="#"><i class="fas fa-download"></i> <span>Free Download</span></a></li>
                     <li><a href="#"><i class="fas fa-chevron-left"></i></a></li>
                     <li><a href="#"><i class="fas fa-chevron-right"></i></a></li>
                 </ul>
@@ -43,10 +45,12 @@
                 </div>
             </div>
             <div class="navigation">
-                <div class="container">
+                <div class="container navbar">
                     <div class="logo">
                         <a href="">Reve<span>al</span></a>
                     </div>
+                    <label for="toggle"><i class="fas fa-bars"></i></label>
+                    <input type="checkbox" name="check" id="toggle">
                     <ul class="navigation-menu">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About Us</a></li>
@@ -56,7 +60,6 @@
                         <li class="dropdown"><a href="#">Drop Down <i class="fas fa-angle-down"></i></a>
                             <ul class="submenu">
                                 <li><a href="#">Drop Down 1</a></li>
-                                <li><a href="#">Drop Down 2</a></li>
                                 <li><a href="#">Drop Down 3</a></li>
                                 <li><a href="#">Drop Down 4</a></li>
                                 <li><a href="#">Drop Down 5</a></li>
