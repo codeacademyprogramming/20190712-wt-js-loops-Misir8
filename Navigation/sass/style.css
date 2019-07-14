@@ -256,11 +256,13 @@ header nav .navigation .navbar .navigation-menu .dropdown {
 header nav .navigation .navbar .navigation-menu .dropdown .submenu {
   position: absolute;
   top: 55px;
+  background-color: #fff !important;
   -webkit-box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
           box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   padding: 10px;
   min-width: 200px;
   display: none;
+  z-index: 99;
 }
 
 header nav .navigation .navbar .navigation-menu .dropdown .submenu li {
