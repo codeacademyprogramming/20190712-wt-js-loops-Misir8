@@ -45,7 +45,7 @@
     transition: .2s all;
   }
   .navigation .navigation-menu .dropdown .submenu {
-    background-color: rgba(53, 61, 65, 0.97);
+    background-color: rgba(53, 61, 65, 0) !important;
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
     position: static !important;
