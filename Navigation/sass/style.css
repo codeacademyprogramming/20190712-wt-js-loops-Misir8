@@ -146,6 +146,7 @@ header nav .contact .contact-item .contact-us li {
 
 header nav .contact .contact-item .contact-us li:last-child {
   padding-left: 20px;
+  font-family: sans-serif;
 }
 
 header nav .contact .contact-item .contact-us li a {
